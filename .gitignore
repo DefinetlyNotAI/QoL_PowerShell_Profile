@@ -1,0 +1,14 @@
+# Local credentials and runtime state
+**/passphrase.dat
+**/.webui_secret_key
+*.log
+.env
+.env.*
+!.env.example
+*.local.ps1
+*.local.json
+*.local.toml
+# Installed vendor modules and historical removed scripts
+/PowerShell/Modules/wt-shell-integration/
+/PowerShell/extraScript/
+/snapshot.json

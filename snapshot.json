@@ -1,0 +1,85 @@
+{
+  "captured_on": "2026-10-09",
+  "files": [
+    {
+      "file": "PowerShell/Microsoft.PowerShell_profile.ps1",
+      "original": "Documents/PowerShell/Microsoft.PowerShell_profile.ps1",
+      "sha256": "08203fb26e24ebe4ef00409567b96c3c3aa3520b8303eaeae592ac8849a704e8"
+    },
+    {
+      "file": "PowerShell/powershell.config.json",
+      "original": "Documents/PowerShell/powershell.config.json",
+      "sha256": "3ff00295e49827930733a5d883a30435d5b3dc7320eaa2ef1357da01b81ec9e5"
+    },
+    {
+      "file": "PowerShell/Modules/Custom/AtuinUpKeyHistory.ps1",
+      "original": "Documents/PowerShell/Modules/Custom/AtuinUpKeyHistory.ps1",
+      "sha256": "203079b2bb1ff181e2edcb38e879f466ecb1e2e80efefeedcb25fe6768e089a6"
+    },
+    {
+      "file": "PowerShell/Modules/Custom/ProgramAliases.ps1",
+      "original": "Documents/PowerShell/Modules/Custom/ProgramAliases.ps1",
+      "sha256": "29d45cfe272c66b8d0bb90e15d4d587dee5f07b9f974ac5c3f23dc3eb2a5ebe2"
+    },
+    {
+      "file": "PowerShell/Modules/Custom/PythonEnvironment.ps1",
+      "original": "Documents/PowerShell/Modules/Custom/PythonEnvironment.ps1",
+      "sha256": "638d0849bb961166a03fbe5b3e8fe5bafa05fbf5c2fa1a27f9b76fde93621e04"
+    },
+    {
+      "file": "PowerShell/Modules/Custom/UtilityFunctions.ps1",
+      "original": "Documents/PowerShell/Modules/Custom/UtilityFunctions.ps1",
+      "sha256": "a4fffe0d86585a8f92ec86f6039f588511a25cd3706d712a481c2b57b8710eda"
+    },
+    {
+      "file": "PowerShell/Modules/Custom/ZoxideTabAutocomplete.ps1",
+      "original": "Documents/PowerShell/Modules/Custom/ZoxideTabAutocomplete.ps1",
+      "sha256": "ee8467f86b8c9a0b4926d13be2d18061d4d913ac2f42d5193ac347287428b990"
+    },
+    {
+      "file": "CustomScripts/gpg-startup.ps1",
+      "original": ".custom/gpg-startup.ps1",
+      "sha256": "7ed92432a13f2f6aa6651c70566f709567194810b89025fd4f176f06f078f9e5"
+    },
+    {
+      "file": "CustomScripts/Kali-MonitorMode.ps1",
+      "original": ".custom/Kali-MonitorMode.ps1",
+      "sha256": "9afd064d6492b771082de1d65790db761bf1eab1b0ae00f026ad419814fa8d41"
+    },
+    {
+      "file": "CustomScripts/start-webui.ps1",
+      "original": ".custom/start-webui.ps1",
+      "sha256": "b2056a02591fd2d49a61d462569ea1be1046404415e820e55748e699ada88cea"
+    },
+    {
+      "file": "Themes/atomic.omp.json",
+      "original": ".poshthemes/atomic.omp.json",
+      "sha256": "495eae97b34a4e02ca0aa4a5b6e47daba2c418c43fa1408936d10ac2ef24b532"
+    },
+    {
+      "file": "Themes/frappe.omp.json",
+      "original": ".poshthemes/frappe.omp.json",
+      "sha256": "cf83e0516092f61fcfc08ee9d05edbfadba1ef286c6289e34cc062ca18aa8032"
+    },
+    {
+      "file": "Themes/kali.omp.json",
+      "original": ".poshthemes/kali.omp.json",
+      "sha256": "5ad212f16fc8a3bd0bae8f340dae4874da7f1f40ebe969c87586a18cc7710c4d"
+    },
+    {
+      "file": "Atuin/config.toml",
+      "original": ".config/atuin/config.toml",
+      "sha256": "8a57e391be0a4a2fa5c25ce59aaddc21d0b1ffc4febae90d1a1570aa32f972bc"
+    },
+    {
+      "file": "PowerShell/Modules/wt-shell-integration/1.0.0/wt-shell-integration.psd1",
+      "original": "Documents/PowerShell/Modules/wt-shell-integration/1.0.0/wt-shell-integration.psd1",
+      "sha256": "3e937781d60d0753e509f465bbe339908ca3659dd7823149db4f83623c322f6f"
+    },
+    {
+      "file": "PowerShell/Modules/wt-shell-integration/1.0.0/wt-shell-integration.psm1",
+      "original": "Documents/PowerShell/Modules/wt-shell-integration/1.0.0/wt-shell-integration.psm1",
+      "sha256": "6c4d58b260685b0aae81d160d4a48158f2917b079a7dc461b37308919a823d9c"
+    }
+  ]
+}
