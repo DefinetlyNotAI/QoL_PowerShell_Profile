@@ -1,8 +1,17 @@
 # CLI program replacements
 Remove-Alias ls -Force -ErrorAction SilentlyContinue
-function ls { eza --icons --group-directories-first @args }
-function ll { eza -lah --icons --group-directories-first --git @args }
-function tree { eza --tree --icons --group-directories-first @args }
+
+function ls {
+    eza --icons=always --hyperlink --group-directories-first @args
+}
+
+function ll {
+    eza -lah --icons=always --hyperlink --group-directories-first --git @args
+}
+
+function tree {
+    eza --tree --icons=always --hyperlink --group-directories-first @args
+}
 
 Remove-Alias cat -Force -ErrorAction SilentlyContinue
 function cat { bat --paging=never @args }
