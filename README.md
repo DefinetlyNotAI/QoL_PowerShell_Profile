@@ -21,6 +21,7 @@ The following table describes the actual files in this repository. “Required�
 | `CustomScripts/Kali-MonitorMode.ps1` | Optional, required only for `monitor-mode` | Kali WSL2 USB Wi-Fi helper |
 | `CustomScripts/gpg-startup.ps1` | Optional | Starts GPG agent, optionally presets passphrase |
 | `CustomScripts/start-webui.ps1` | Optional | Launches Open WebUI and optionally `fcc-server` |
+| `Startup/startup.cmd` | Optional | Automates GPG initialization and WinGet maintenance on system startup |
 | `.gitattributes`, `.gitignore` | Repository maintenance | Text normalization and exclusions |
 
 All five `Modules/Custom/*.ps1` scripts are **unconditionally dot-sourced** by the existing profile. Do not delete one without removing its import line. The standalone scripts do not run at PowerShell startup.
@@ -138,6 +139,19 @@ This opt-in method briefly handles a plaintext passphrase in process memory. Pre
 ### `CustomScripts/Kali-MonitorMode.ps1`
 
 Requires administrator PowerShell 7, WSL2 Kali Linux, `usbipd-win`, `iw`, `iproute2`, `usbutils`, and a compatible USB wireless adapter/kernel driver. The script defaults to a particular adapter and driver, so inspect its configuration before use. It is not needed for the profile except when invoking `monitor-mode`.
+
+You must use this [custom kernel for wsl2](https://github.com/DefinetlyNotAI/Kali_WSL2_Kernel) for this program to actually work, as current WSL2 kernel doesn't support this feature.
+
+### `Startup/startup.cmd`
+
+Requires Windows, WinGet, PowerShell, Windows Terminal, and administrator privileges. 
+Place `startup.cmd` directly inside the Windows Startup folder (`Win + R` → `shell:startup`) to execute it automatically at user login.
+
+The script requests administrator elevation if needed, runs `gpg-startup.ps1` (aforementioned script above), updates WinGet sources, and silently upgrades all eligible applications. It filters WinGet's unknown-version warning from the output (as it causes so many false positives such when you install scripts not via WinGet).
+
+The hardcoded path to `gpg-startup.ps1` must match your local installation. 
+Windows may prompt for administrator approval at every login.
+The script does not install missing dependencies or guarantee successful upgrades.
 
 ## Security and version-control hygiene
 
