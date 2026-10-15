@@ -153,6 +153,22 @@ The hardcoded path to `gpg-startup.ps1` must match your local installation.
 Windows may prompt for administrator approval at every login.
 The script does not install missing dependencies or guarantee successful upgrades.
 
+## Extra Features (Optional)
+
+### Rich Python Tracebacks
+
+Enable globally styled Python exception tracebacks using [Rich](https://github.com/Textualize/rich). 
+
+Provides syntax-highlighted source code, detailed stack frames, local variable inspection, and formatted error panels.
+
+The setup creates a global `sitecustomize.py` and configures `PYTHONPATH` to automatically activate Rich during Python startup, without modifying individual scripts. Requires Rich to be installed in the active Python environment.
+
+```powershell
+irm https://raw.githubusercontent.com/DefinetlyNotAI/QoL_PowerShell_Profile/main/RichPy_Setup.ps1 | iex
+```
+
+Run once to configure your Windows user environment. Applies across PowerShell, CMD, Windows Terminal, and compatible Python environments.
+
 ## Security and version-control hygiene
 
 Never commit Atuin history, GPG private keys, `passphrase.dat`, environment secrets, WebUI secret keys, or user-specific local configuration. These are not required for this repository. `.gitignore` prevents future accidental additions but cannot remove secrets already present in historical commits. Do not vendor installed PowerShell Gallery modules. The removed `PowerShell/Modules/wt-shell-integration/` directory should be installed externally instead.
